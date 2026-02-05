@@ -10,7 +10,7 @@ function createNameBackground() {
 
   nameBackground.innerHTML = "";
 
-  const names = ["Abrar", "Tekno"];
+  const names = ["Etoo", "Lolo"];
   const totalNames = 26;
 
   for (let i = 0; i < totalNames; i += 1) {
