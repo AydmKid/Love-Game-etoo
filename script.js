@@ -87,7 +87,7 @@ yesBtn.addEventListener("click", () => {
   const centerX = rect.left + rect.width / 2;
   const centerY = rect.top + rect.height / 2;
 
-  message.textContent = "! 💖 Like you too";
+  message.textContent = "! 💖 I Like you too";
   message.classList.remove("message-show");
   void message.offsetWidth;
   message.classList.add("message-show");
