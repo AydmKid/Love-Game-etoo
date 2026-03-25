@@ -1,27 +1,292 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Do You Like Me ?</title>
+  <title>Domains For Sale | Walla Domains</title>
+  <meta name="description" content="A modern landing page to showcase premium domains for sale with clear pricing and direct contact options.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="nameBackground" class="name-background" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand">
+          <span class="brand-mark">WD</span>
+          <div>
+            <p>Walla Domains</p>
+            <span data-i18n="brandSubtitle">Premium domains ready for sale</span>
+          </div>
+        </div>
+        <a class="nav-cta" href="#domains" data-i18n="navCta">View Domains</a>
+      </nav>
 
-  <main class="card">
-    <h1> ? Do You Like Me  </h1>
-    <p class="hint">! Choose honesty </p>
+      <section class="hero-content">
+        <div class="hero-copy">
+            <span class="eyebrow" data-i18n="heroEyebrow">Personally owned premium domains</span>
+          <h1 data-i18n="heroTitle">Domains I bought and now offer for resale</h1>
+          <p data-i18n="heroText">
+            A modern showcase page for domain names I personally own, with clear pricing, category, and availability to help serious buyers contact me quickly.
+          </p>
 
-    <div class="buttons">
-      <button id="yesBtn" class="btn yes">yes</button>
-      <button id="noBtn" class="btn no">no</button>
-    </div>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#domains" data-i18n="heroPrimary">Browse Listings</a>
+            <a class="secondary-btn" href="#contact" data-i18n="heroSecondary">Contact Now</a>
+          </div>
 
-    <p id="message" class="message" aria-live="polite"></p>
-  </main>
+          <ul class="hero-stats">
+            <li>
+              <strong>8</strong>
+              <span data-i18n="statDomains">Domains listed</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span data-i18n="statCategories">Categories</span>
+            </li>
+            <li>
+              <strong>24h</strong>
+              <span data-i18n="statReply">Reply time</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-card">
+            <span class="panel-badge" data-i18n="panelBadge">Featured domain</span>
+            <h2>TechSouq.com</h2>
+            <p data-i18n="panelText">A strong name for a tech store, niche e-commerce project, or digital marketplace.</p>
+            <div class="panel-meta">
+              <span data-i18n="panelPrice">Price: $3,200</span>
+              <span data-i18n="panelStatus">Status: Owned and available</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="controls-section" id="domains">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="listEyebrow">Owned domain portfolio</span>
+          <h2 data-i18n="listTitle">Domains available for resale and transfer</h2>
+          <p data-i18n="listText">These domains are already owned and can be transferred to the buyer after agreement and payment.</p>
+        </div>
+
+        <div class="controls">
+          <label class="search-box">
+            <span data-i18n="searchLabel">Search</span>
+            <input id="searchInput" type="search" placeholder="Search by domain name or extension" data-i18n-placeholder="searchPlaceholder">
+          </label>
+
+          <label class="filter-box">
+            <span data-i18n="categoryLabel">Category</span>
+            <select id="categoryFilter">
+              <option value="all" data-i18n="optionAll">All</option>
+              <option value="tech" data-i18n="optionTech">Tech</option>
+              <option value="business" data-i18n="optionBusiness">Business</option>
+              <option value="media" data-i18n="optionMedia">Media</option>
+              <option value="brand" data-i18n="optionBrand">Brand</option>
+            </select>
+          </label>
+
+          <label class="filter-box">
+            <span data-i18n="sortLabel">Sort By</span>
+            <select id="sortFilter">
+              <option value="default" data-i18n="sortDefault">Default</option>
+              <option value="price-asc" data-i18n="sortPriceAsc">Price: Low to High</option>
+              <option value="price-desc" data-i18n="sortPriceDesc">Price: High to Low</option>
+              <option value="name" data-i18n="sortName">Name</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="domains-grid" id="domainGrid">
+        <article class="domain-card" data-name="TechSouq.com" data-category="tech" data-price="3200">
+          <div class="card-top">
+            <span class="tag tech" data-i18n="optionTech">Tech</span>
+            <span class="status available" data-i18n="statusAvailable">Available</span>
+          </div>
+          <h3>TechSouq.com</h3>
+          <p data-i18n="domain1Desc">A direct, brandable name for electronics stores, review platforms, or tech marketplaces.</p>
+          <div class="card-footer">
+            <strong>$3,200</strong>
+            <a href="#contact" data-i18n="buyNow">Buy Now</a>
+          </div>
+        </article>
+
+        <article class="domain-card" data-name="SooqAI.com" data-category="tech" data-price="4100">
+          <div class="card-top">
+            <span class="tag tech" data-i18n="optionTech">Tech</span>
+            <span class="status available" data-i18n="statusAvailable">Available</span>
+          </div>
+          <h3>SooqAI.com</h3>
+          <p data-i18n="domain2Desc">Ideal for an AI platform, automation tools, or a modern SaaS startup targeting the region.</p>
+          <div class="card-footer">
+            <strong>$4,100</strong>
+            <a href="#contact" data-i18n="buyNow">Buy Now</a>
+          </div>
+        </article>
+
+        <article class="domain-card" data-name="CashNakhla.com" data-category="business" data-price="1850">
+          <div class="card-top">
+            <span class="tag business" data-i18n="optionBusiness">Business</span>
+            <span class="status available" data-i18n="statusAvailable">Available</span>
+          </div>
+          <h3>CashNakhla.com</h3>
+          <p data-i18n="domain3Desc">A distinctive option for fintech services, digital wallets, or payment solutions.</p>
+          <div class="card-footer">
+            <strong>$1,850</strong>
+            <a href="#contact" data-i18n="buyNow">Buy Now</a>
+          </div>
+        </article>
+
+        <article class="domain-card" data-name="BrandMint.co" data-category="brand" data-price="2300">
+          <div class="card-top">
+            <span class="tag brand" data-i18n="optionBrand">Brand</span>
+            <span class="status reserved" data-i18n="statusReserved">Reserved</span>
+          </div>
+          <h3>BrandMint.co</h3>
+          <p data-i18n="domain4Desc">A short, modern name for a branding agency, identity studio, or creative consultancy.</p>
+          <div class="card-footer">
+            <strong>$2,300</strong>
+            <a href="#contact" data-i18n="inquiry">Inquiry</a>
+          </div>
+        </article>
+
+        <article class="domain-card" data-name="RoyaMedia.net" data-category="media" data-price="1600">
+          <div class="card-top">
+            <span class="tag media" data-i18n="optionMedia">Media</span>
+            <span class="status available" data-i18n="statusAvailable">Available</span>
+          </div>
+          <h3>RoyaMedia.net</h3>
+          <p data-i18n="domain5Desc">Fits a content agency, news platform, podcast network, or production studio.</p>
+          <div class="card-footer">
+            <strong>$1,600</strong>
+            <a href="#contact" data-i18n="buyNow">Buy Now</a>
+          </div>
+        </article>
+
+        <article class="domain-card" data-name="QimamHub.com" data-category="business" data-price="2900">
+          <div class="card-top">
+            <span class="tag business" data-i18n="optionBusiness">Business</span>
+            <span class="status available" data-i18n="statusAvailable">Available</span>
+          </div>
+          <h3>QimamHub.com</h3>
+          <p data-i18n="domain6Desc">A strong fit for a business hub, professional community, or startup services platform.</p>
+          <div class="card-footer">
+            <strong>$2,900</strong>
+            <a href="#contact" data-i18n="buyNow">Buy Now</a>
+          </div>
+        </article>
+
+        <article class="domain-card" data-name="PixelMajlis.com" data-category="media" data-price="2100">
+          <div class="card-top">
+            <span class="tag media" data-i18n="optionMedia">Media</span>
+            <span class="status available" data-i18n="statusAvailable">Available</span>
+          </div>
+          <h3>PixelMajlis.com</h3>
+          <p data-i18n="domain7Desc">A creative, unconventional domain for digital content, design studios, or creator communities.</p>
+          <div class="card-footer">
+            <strong>$2,100</strong>
+            <a href="#contact" data-i18n="buyNow">Buy Now</a>
+          </div>
+        </article>
+
+        <article class="domain-card" data-name="NabdBrand.com" data-category="brand" data-price="2600">
+          <div class="card-top">
+            <span class="tag brand" data-i18n="optionBrand">Brand</span>
+            <span class="status available" data-i18n="statusAvailable">Available</span>
+          </div>
+          <h3>NabdBrand.com</h3>
+          <p data-i18n="domain8Desc">An easy-to-remember Arabic-inspired name for premium brands or personal ventures.</p>
+          <div class="card-footer">
+            <strong>$2,600</strong>
+            <a href="#contact" data-i18n="buyNow">Buy Now</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="features">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="featuresEyebrow">Why buy from this list?</span>
+          <h2 data-i18n="featuresTitle">A clearer way to present domains you already own</h2>
+        </div>
+
+        <div class="features-grid">
+          <article>
+            <h3 data-i18n="feature1Title">Ownership clarity</h3>
+            <p data-i18n="feature1Text">Visitors understand that these domains are already owned and offered for direct resale.</p>
+          </article>
+          <article>
+            <h3 data-i18n="feature2Title">Simple negotiation</h3>
+            <p data-i18n="feature2Text">Each listing shows a clear starting price so buyers can quickly decide what fits them.</p>
+          </article>
+          <article>
+            <h3 data-i18n="feature3Title">Easy transfer flow</h3>
+            <p data-i18n="feature3Text">The page makes it easy to explain that domain transfer happens after payment confirmation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="features trust-section">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="transferEyebrow">Transfer process</span>
+          <h2 data-i18n="transferTitle">How the sale works</h2>
+        </div>
+
+        <div class="features-grid">
+          <article>
+            <h3 data-i18n="transfer1Title">1. Buyer contacts you</h3>
+            <p data-i18n="transfer1Text">The buyer chooses a domain and sends a purchase inquiry through email or WhatsApp.</p>
+          </article>
+          <article>
+            <h3 data-i18n="transfer2Title">2. Payment is confirmed</h3>
+            <p data-i18n="transfer2Text">You agree on the price and confirm payment through your preferred secure method.</p>
+          </article>
+          <article>
+            <h3 data-i18n="transfer3Title">3. Domain is transferred</h3>
+            <p data-i18n="transfer3Text">After confirmation, you transfer the domain from your registrar account to the buyer.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-copy">
+          <span class="eyebrow" data-i18n="contactEyebrow">Start a deal</span>
+          <h2 data-i18n="contactTitle">Interested in one of my domains?</h2>
+          <p data-i18n="contactText">Contact me directly to ask about price, transfer details, or to reserve a domain before final payment.</p>
+        </div>
+
+        <div class="contact-actions contact-grid">
+          <a class="contact-card email-card" href="mailto:WALLASEDDING@GMAIL.com">
+            <span class="contact-icon" aria-hidden="true">✉</span>
+            <span class="contact-label" data-i18n="emailLabel">Email</span>
+            <strong>WALLASEDDING</strong>
+            <small data-i18n="emailHint">Best for offers, negotiation, and transfer details</small>
+          </a>
+
+          <a class="contact-card whatsapp-card" href="https://wa.me/966507095571" target="_blank" rel="noreferrer">
+            <span class="contact-icon" aria-hidden="true">◔</span>
+            <span class="contact-label" data-i18n="whatsappLabel">WhatsApp</span>
+            <strong data-i18n="whatsapp">WhatsApp</strong>
+            <small data-i18n="whatsappHint">Fast replies for pricing and domain availability</small>
+          </a>
+
+          <a class="contact-card instagram-card" href="https://instagram.com/walladomains" target="_blank" rel="noreferrer">
+            <span class="contact-icon" aria-hidden="true">◎</span>
+            <span class="contact-label" data-i18n="instagramLabel">Instagram</span>
+            <strong>@walladomains</strong>
+            <small data-i18n="instagramHint">Follow or message me for new domain updates</small>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-    
